@@ -114,7 +114,7 @@ async function connectToMongoDB(){
 
     const db = client.db('myFirstDatabase');
 
-    const mensagens = db.collection('mensagens');    
+    const mensagens = db.collection('messages');    
 
     console.log(await mensagens.find({}).toArray());
 
